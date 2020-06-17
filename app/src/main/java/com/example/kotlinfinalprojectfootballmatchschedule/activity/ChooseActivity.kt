@@ -46,5 +46,11 @@ class ChooseActivity : AppCompatActivity() {
             intent.putExtra("ExtraLeague",leagueParcelable)
             startActivity(intent)
         }
+
+        btn_choose_standings.setOnClickListener {
+            val intent:Intent =Intent(this, StandingActivity::class.java)
+            intent.putExtra("ExtraLeague",leagueParcelable)
+            startActivity(intent)
+        }
     }
 }
